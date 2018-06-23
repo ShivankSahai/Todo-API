@@ -1,5 +1,5 @@
 // let MongoClient=require('mongodb').MongoClient
-let { MongoClient, ObjectID } = require('mongodb')
+let { MongoClient, ObjectId } = require('mongodb')
 
 MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
     if (err)
@@ -33,7 +33,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
     //     console.log(err)
     // })
 
-    db.collection('Users').findOneAndDelete({ _id: new ObjectID("5b2df7f7235b63e789e90446") }).then((result) => {
+    db.collection('Users').findOneAndDelete({ _id: new ObjectId("5b2df7f7235b63e789e90446") }).then((result) => {
         console.log(result)
     }, (err) => {
         console.log(err)
