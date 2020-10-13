@@ -18,16 +18,3 @@ let Todo = mongoose.model('Todo', {
 })
 
 module.exports={Todo}
-
-
-// How to do:
-
-// let newTodo=new Todo({
-//     text: 'Do project'
-// })
-
-// newTodo.save().then((result)=>{
-//     console.log(result)
-// },(err)=>{
-//     console.log(err)
-// })
